@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.side-dialog {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 15px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .side-dialog.open {
+    right: 0; 
+  }
+  
+  .close-dialog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 0;
+    color: white;
+    background: none;
+    font-size: 25px;
+  }
+  
+  
+
+
+
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.main input{
+    width: 420px;
+    height: 50px;
+    background: #DADADA;
+    border: 0;
+
+}
+.main button{
+    width: 420px;
+    height: 50px;
+    border: 0;
+}
+.head{
+    display: flex;
+    gap: 140px;
+    justify-content: center;
+    align-items: center;
+}
+#pod{
+    background-color: aqua;
+}
+.zayava{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.head p{
+    font-family: Gilroy;
+font-size: 36px;
+font-weight: 600;
+line-height: 44.1px;
+text-align: left;
+
+}
+dialog{
+    border: 0;
+}
+.fade{
+    animation: fade .5s ease;
+}
+@keyframes fade {
+    from{
+        opacity: 0.1;
+        scale: 0.1;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.x{
+    background: none;
+    border: 0;
+}
+.x button{
+    font-size: 25px;
+}
